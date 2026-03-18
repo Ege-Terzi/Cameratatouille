@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Omelette",
+    "ingredients": ["egg"],
+    "optional_ingredients": ["cheese", "pepper", "tomato"],
+    "steps": [
+      {
+        "text": "Crack the eggs into a bowl",
+        "complete_if": {"bowl_state_in": ["beaten_egg_bowl"]}
+      },
+      {
+        "text": "Whisk the eggs well",
+        "complete_if": {"bowl_state_in": ["beaten_egg_bowl"]}
+      },
+      {
+        "text": "Pour the eggs into the pan",
+        "complete_if": {}
+      },
+      {
+        "text": "Cook and fold the omelette",
+        "complete_if": {}
+      },
+      {
+        "text": "Serve the omelette",
+        "complete_if": {}
+      }
+    ]
+  },
+  {
+    "name": "Tomato Egg Bowl",
+    "ingredients": ["egg", "tomato"],
+    "optional_ingredients": ["pepper", "salt"],
+    "steps": [
+      {
+        "text": "Chop the tomatoes",
+        "complete_if": {"ingredients_present": ["tomato"]}
+      },
+      {
+        "text": "Crack the eggs into a bowl",
+        "complete_if": {"bowl_state_in": ["beaten_egg_bowl"]}
+      },
+      {
+        "text": "Whisk the eggs",
+        "complete_if": {"bowl_state_in": ["beaten_egg_bowl"]}
+      },
+      {
+        "text": "Mix tomato with egg",
+        "complete_if": {"ingredients_present": ["tomato"], "bowl_state_in": ["beaten_egg_bowl"]}
+      },
+      {
+        "text": "Cook and serve",
+        "complete_if": {}
+      }
+    ]
+  },
+  {
+    "name": "Simple Salad",
+    "ingredients": ["tomato", "carrot"],
+    "optional_ingredients": ["lettuce", "cucumber"],
+    "steps": [
+      {
+        "text": "Chop the tomatoes",
+        "complete_if": {"ingredients_present": ["tomato"]}
+      },
+      {
+        "text": "Chop the carrots",
+        "complete_if": {"ingredients_present": ["carrot"]}
+      },
+      {
+        "text": "Put everything into a bowl",
+        "complete_if": {"ingredients_present": ["tomato", "carrot"]}
+      },
+      {
+        "text": "Mix and serve",
+        "complete_if": {}
+      }
+    ]
+  }
+]
