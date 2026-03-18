@@ -1,80 +1,86 @@
-# Cameratatouille - Cooking Assistant with Computer Vision
+# 🍳 Cameratatouille - Cooking Assistant with Computer Vision
+
 An intelligent cooking assistant powered by computer vision that guides users through recipes in real-time by detecting ingredients and tracking cooking progress from video input.
 
-🔍 Ingredient Detection
-Detects food items using YOLOv8 in real-time
+---
 
-🥣 Bowl State Classification
-Understands what's inside the bowl (e.g. empty, beaten eggs)
+## 🚀 Features
 
-📋 Step-by-Step Guidance
-Displays recipe steps and tracks progress visually
+### 🔍 Ingredient Detection
+Detects food items using YOLOv8 in real-time.
 
-🤖 Auto Mode
-Automatically advances steps when conditions are met
+### 🥣 Bowl State Classification
+Understands what's inside the bowl (e.g. empty, beaten eggs).
 
-🎯 Stable Detection System
-Reduces flickering using temporal smoothing
+### 📋 Step-by-Step Guidance
+Displays recipe steps and tracks progress visually.
 
-🖥️ Custom UI Overlay
-Clean real-time interface with:
+### 🤖 Auto Mode
+Automatically advances steps when conditions are met.
 
-Current step
+### 🎯 Stable Detection System
+Reduces flickering using temporal smoothing.
 
-Completed steps
+### 🖥️ Custom UI Overlay
+Clean real-time interface showing:
+- Current step  
+- Completed steps  
+- Missing ingredients  
 
-Missing ingredients
+---
 
-How It Works
+## 🧠 How It Works
 
 <img width="2901" height="130" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/9213bf8c-b842-4387-8add-51f3c27c6941" />
 
-▶️ Usage
+## ▶️ Usage
 python cooking_assistant.py
 
-Select a recipe from terminal
+1. Select a recipe from the terminal  
+2. Video starts  
+3. Follow instructions on screen  
 
-Video starts
+---
 
-Follow instructions on screen
+## 🎮 Controls
 
-🎮 Controls
-Key	Action
-n	Next step
-p	Previous step
-c	Toggle complete
-a	Toggle auto mode
-space	Pause
-q	Quit
+| Key      | Action             |
+|----------|------------------|
+| `n`      | Next step        |
+| `p`      | Previous step    |
+| `c`      | Toggle complete  |
+| `a`      | Toggle auto mode |
+| `space`  | Pause            |
+| `q`      | Quit             |
 
-🛠️ Tech Stack
+---
 
-🧠 PyTorch
+## 🛠️ Tech Stack
 
-🔍 YOLOv8 (Ultralytics)
+- 🧠 PyTorch  
+- 🔍 YOLOv8 (Ultralytics)  
+- 🎥 OpenCV  
+- 🖼️ PIL / torchvision  
 
-🎥 OpenCV
+---
 
-🖼️ PIL / torchvision
+## 📈 Future Improvements
 
-📈 Future Improvements
+- 🎤 Voice guidance  
+- 📱 Mobile / web interface  
+- 🍲 Multi-recipe tracking  
+- 🧠 More food state classifiers  
+- 🧍 Multi-user support  
+- 📷 Webcam input  
 
-🎤 Voice guidance
+---
 
-📱 Mobile / web interface
-
-🍲 Multi-recipe tracking
-
-🧠 More food state classifiers
-
-🧍 Multi-user support
-
-📷 Webcam input
-
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
-⭐ If you like this project
+---
 
-Give it a star ⭐ and feel free to contribute!
+## ⭐ Support
+
+If you like this project, give it a star ⭐ and feel free to contribute!
